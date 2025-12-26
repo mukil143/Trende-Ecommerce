@@ -14,7 +14,7 @@ const Razorpaybutton = ({amount,handlePaymentSuccess,handleFinalizeCheckout,chec
         // setLoading(true); // Set loading state to true
         //console.log("Payment initiated");
         try {
-           const data = await fetch(`${localhostbackendurl}/orders`,{
+           const data = await fetch(`${import.meta.env.VITE_BACKEND_URL}/api/payment/orders`,{
             method:"POST",
             headers: {
                 "Content-Type": "application/json",
@@ -47,7 +47,7 @@ const Razorpaybutton = ({amount,handlePaymentSuccess,handleFinalizeCheckout,chec
         description: "Payment for your order",
         handler: async (response)=> {
           // Handle the payment response here
-         const paymentResponse = await fetch(`${localhostbackendurl}/verify`, {
+         const paymentResponse = await fetch(`${import.meta.env.VITE_BACKEND_URL}/api/payment/verify`, {
             method: "POST",
             headers: {
               "Content-Type": "application/json",
