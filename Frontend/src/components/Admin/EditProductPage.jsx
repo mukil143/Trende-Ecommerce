@@ -109,8 +109,6 @@ const EditProductPage = () => {
 
       // cleanup preview object url
       URL.revokeObjectURL(previewUrl);
-
-      console.log("Uploaded image URL:", imageUrl);
       return imageUrl;
     } catch (err) {
       console.error("Image upload failed:", err);
@@ -183,7 +181,6 @@ const EditProductPage = () => {
         colors: productData.colors || [],
       };
 
-      console.log("Submitting payload:", payload);
 
       // dispatch and unwrap — unwrap throws if the thunk was rejected
       const updated = await dispatch(
@@ -191,7 +188,7 @@ const EditProductPage = () => {
       ).unwrap();
 
       // `updated` is the resolved payload returned by the thunk
-      console.log("Update success:", updated);
+    
       alert("Product updated successfully!");
 
       // optional: navigate to product page or refresh list

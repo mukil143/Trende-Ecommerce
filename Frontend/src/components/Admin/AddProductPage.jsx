@@ -25,7 +25,6 @@ const AddProductPage = () => {
     brand: "",
     gender: "",
   });
-  console.log("Product Data:", productData);
   const handleChange = (e) => {
     const { name, value } = e.target;
     setProductData((prev) => ({
@@ -193,7 +192,6 @@ const AddProductPage = () => {
         }),
       }));
 
-      console.log("Uploaded:", imageUrl);
 
       // Cleanup memory
       URL.revokeObjectURL(previewUrl);
@@ -231,7 +229,6 @@ const AddProductPage = () => {
           },
         }
       );
-      console.log("Product added:", response.data);
       alert("Product added successfully!");
       await dispatch(fetchAllProducts());
       navigate("/admin/products");

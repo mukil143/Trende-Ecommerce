@@ -49,10 +49,9 @@ const Checkout = () => {
     country: "",
     phone: "",
   });
-  console.log(shippingAddress);
+
 
   useEffect(() => {
-    console.log("Checkout useEffect cart:", cart);
     if (!cart || !cart.products.length === 0) {
       return navigate("/cart");
     }
@@ -69,9 +68,7 @@ const Checkout = () => {
             paymentMethod: "Razorpay",
           })
         );
-        console.log("Checkout response:", res.payload);
         if (res.payload && res.payload?._id) {
-          console.log("Checkout created with ID:", res.payload._id);
           setcheckoutid(res.payload._id);
         }
       }
@@ -102,7 +99,6 @@ const Checkout = () => {
           },
         }
       );
-      console.log("Payment success response:", response);
       if (response.status === 200) {
         await handleFinalizeCheckout();
       } else {
@@ -125,7 +121,6 @@ const Checkout = () => {
           },
         }
       );
-      console.log("Finalize response:", response);
       if (response.status === 200) {
         // alert("Checkout finalized");
         navigate("/order-confirmation", {

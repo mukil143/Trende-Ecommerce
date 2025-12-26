@@ -16,7 +16,6 @@ const [Allusers,setAllusers]=useState([]);
 
     const handleSubmit=(e)=>{
         e.preventDefault();
-        console.log(user);
         if(!user.name || !user.email || !user.password || !user.role){
             return alert("All fields are required");
         }
@@ -49,11 +48,13 @@ const [Allusers,setAllusers]=useState([]);
 
     const handleDelete=async(userId)=>{
         if(window.confirm("Are you sure you want to delete this user?")){
-            await dispatch(deleteUser(userId));
+             await dispatch(deleteUser(userId));
             fetchUser();
+            return;
         }
         else{
             console.log("user not deleted");
+            return;
         }
     }
 

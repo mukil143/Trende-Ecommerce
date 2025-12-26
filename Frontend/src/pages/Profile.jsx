@@ -7,7 +7,6 @@ import { clearCart } from '../slices/CartSlice.js'
 
 const Profile = () => {
   const {user, loading, error, guestId } = useSelector((state) => state.auth);
-  console.log(user);
   const navigate = useNavigate();
   const dispatch = useDispatch();
 

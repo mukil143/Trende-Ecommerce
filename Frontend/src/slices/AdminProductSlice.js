@@ -43,7 +43,6 @@ export const deleteProduct = createAsyncThunk(
           Authorization:`Bearer ${USER_TOKEN}`,
         }
       });
-      console.log(response.data);
       return response.data.id;
     } catch (error) {
       console.log(error);
@@ -64,7 +63,6 @@ export const createProduct = createAsyncThunk(
           Authorization:`Bearer ${localStorage.getItem("userToken")}`,
         }
       })
-      console.log(response.data);
       return response.data;
     } catch (error) {
       console.log(error);

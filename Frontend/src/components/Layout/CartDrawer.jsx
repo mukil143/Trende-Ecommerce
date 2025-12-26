@@ -22,7 +22,6 @@ const CartDrawer = ({ drawerisOpen, handlecartToggle }) => {
   const handleCheckout = () => {
 
     // Logic for handling checkout
-    console.log("Proceeding to checkout");
     handlecartToggle(); // Close the cart drawer after checkout
     if (!user) {
       navigate("/login?redirect=/checkout");

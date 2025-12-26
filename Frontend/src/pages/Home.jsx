@@ -108,7 +108,6 @@ import OrderLoader from "../components/Common/OrderLoader.jsx";
 const Home = () => {
   const dispatch = useDispatch();
   const { products, loading, error } = useSelector((state) => state.products);
-  // console.log(products); //useSelector((state)=>state.productsList);
   const [bestSellerProduct, setBestSellerProduct] = useState(null);
 
 
@@ -127,7 +126,6 @@ const Home = () => {
     const fetchBestSellerProducts = async () => {
       try {
         const response = await axios.get(`${import.meta.env.VITE_BACKEND_URL}/api/products/best-seller`);
-        // console.log(response.data);
         setBestSellerProduct(response.data);
       } catch (error) {
         console.error("Error fetching best seller products:", error);

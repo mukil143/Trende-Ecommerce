@@ -5,9 +5,9 @@ import { useMemo } from 'react';
 
 
 const Razorpaybutton = ({amount,handlePaymentSuccess,handleFinalizeCheckout,checkoutid}) => {
-  
+
     const navigate = useNavigate();
-    const localhostbackendurl = "http://localhost:8080/api/payment"; // Adjust this to your backend URL
+    const localhostbackendurl = import.meta.env.VITE_BACKEND_URL; // Adjust this to your backend URL
     const handlepayment = async (e) => {
         // Logic for handling Razorpay payment
         e.preventDefault();
@@ -25,14 +25,14 @@ const Razorpaybutton = ({amount,handlePaymentSuccess,handleFinalizeCheckout,chec
             }),
         });
         const orderdata = await data.json();
-        
+
         initiatePayment(orderdata.order);
         } catch (error) {
             //console.error("Error initiating payment:", error);
             alert("Failed to initiate payment. Please try again later.");
             // Optionally, you can redirect or handle the error in a user-friendly way
         }
-      
+
 
     }
 
@@ -57,14 +57,13 @@ const Razorpaybutton = ({amount,handlePaymentSuccess,handleFinalizeCheckout,chec
               razorpay_order_id: response.razorpay_order_id,
               razorpay_signature: response.razorpay_signature,
             }),
-          }) 
-          console.log("Payment verification response:", paymentResponse);
+          })
           const paymentData = await paymentResponse.json();
           //console.log("Payment verification response:", paymentData);
           if(paymentData.status === 200){
             //console.log("Payment verification successful:", paymentData);
             // setLoading(false); // Set loading state to false
-             alert("Payment successful!");  
+             alert("Payment successful!");
             return await handlePaymentSuccess(paymentData);
             // await handleFinalizeCheckout();
             // navigate('/order-confirmation');

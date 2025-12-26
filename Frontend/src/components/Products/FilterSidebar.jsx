@@ -6,7 +6,7 @@ import { clearFilters, fetchProductsByFilters } from '../../slices/productSlice.
 
 const FilterSidebar = () => {
    const navigate=useNavigate();
-   const dispatch=useDispatch(); 
+   const dispatch=useDispatch();
     const [searchParams,setSearchParams]=useSearchParams({});
     const [price,setPrice]=useState(null);
      const [filters,setFilters]=useState({
@@ -58,7 +58,7 @@ const FilterSidebar = () => {
             params.append(key,newfilters[key]);// Append key-value pair
          }
       })
-      console.log("params",params.toString());
+      
       setSearchParams(params);
       navigate(`?${params.toString()}`); // Update the URL with new search params
 
@@ -110,7 +110,7 @@ const FilterSidebar = () => {
      useEffect(()=>{
          const params=Object.fromEntries([...searchParams]); //https://yourapp.com/collection?category=shoes&gender=men&Color=red,blue&size=M,L&brand=Nike&minPrice=150&maxPrice=700 =>> {category:"shoes",gender:"men",Color:"red,blue",size:"M,L",brand:"Nike",minPrice:"150",maxPrice:"700"}
 
-         
+
 
          setFilters({
             ...params,
@@ -172,7 +172,7 @@ const FilterSidebar = () => {
             <button key={idx} name="Color" value={color} id={color} onClick={(e)=>{handleFilterChange(e)}} type='button'  style={{backgroundColor:color.toLowerCase()}} className={`w-8 h-8 border border-gray-300 rounded-full cursor-pointer transition  hover:scale-105 ${filters.Color.includes(color) && "ring-2 ring-offset-2 ring-blue-500"}`} ></button>
          ))}
          </div>
-         
+
       </div>
 
       {/* Size */}

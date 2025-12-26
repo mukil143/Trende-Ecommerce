@@ -14,7 +14,6 @@ const ProductManagement = () => {
 
     const handleDelete=async(id)=>{
         if(window.confirm("Are you sure you want to delete this product?")){
-            console.log("product deleted",id);
            await  dispatch(deleteProduct(id));
         }
         else{
@@ -26,7 +25,6 @@ const ProductManagement = () => {
     const handleSearch = (e) =>{
       const query = e.target.value.toLowerCase();
       setQuery(query);
-      console.log("search query:",query);
 
     }
 

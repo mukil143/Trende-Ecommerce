@@ -34,7 +34,6 @@ export const loginUser = createAsyncThunk(
         `${import.meta.env.VITE_BACKEND_URL}/api/users/login`,
         userdata
       );
-      console.log(response.data);
       await localStorage.setItem(
         "userInfo",
         JSON.stringify(response.data.user)
@@ -52,12 +51,10 @@ export const registerUser = createAsyncThunk(
   "auth/registerUser",
   async (userdata, { rejectWithValue }) => {
     try {
-      console.log(userdata);
       const response = await axios.post(
         `${import.meta.env.VITE_BACKEND_URL}/api/users/register`,
         userdata
       );
-      console.log(response);
       localStorage.setItem("userInfo", JSON.stringify(response.data.user));
       localStorage.setItem("userToken", response.data.token);
       return response.data.user; //return the user object
@@ -100,7 +97,6 @@ const authSlice = createSlice({
       })
       .addCase(loginUser.rejected, (state, action) => {
         state.loading = false;
-        console.log(action.payload);
         state.error = action.payload || action.error.message;
       })
       .addCase(registerUser.pending, (state) => {

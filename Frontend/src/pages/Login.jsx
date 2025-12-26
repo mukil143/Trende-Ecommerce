@@ -15,21 +15,19 @@ const Login = () => {
   const [isHide, setishide] = useState(true);
 
   const navigate = useNavigate();
-  
+
   // const auth =useSelector(state=>state.auth)
-  // console.log(auth);
+
   const dispatch = useDispatch();
-  console.log({ email, password });
-  
+
 
   const { user, loading, error,guestId } = useSelector((state) => state.auth);
   const {cart} = useSelector((state)=>state.cart);
 
   //Get redirect parameter and check if  it's checkout or something
   const redirect =  new URLSearchParams(window.location.search).get("redirect") || "/";
-  console.log("redirect",redirect);
   const isCheckoutRedirect = redirect.includes("/checkout");
-  
+
 useEffect(() => {
   if (error) {
     setErrorMessage(error);

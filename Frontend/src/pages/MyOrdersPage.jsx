@@ -12,7 +12,6 @@ const MyOrdersPage = () => {
   const titles = ["IMAGE", "ORDER ID", "CREATED", "SHIPPING ADDRESS", "ITEMS", "PRICE", "STATUS"];
   const { user } = useSelector((state) => state.auth);
   const { orders, totalOrders, loading, error } = useSelector((state) => state.orders);
-  console.log(user)
 
   // Fetch orders once when user becomes available
   useEffect(() => {

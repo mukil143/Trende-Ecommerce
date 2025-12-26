@@ -40,14 +40,13 @@ export const fetchProductsByFilters = createAsyncThunk(
     const response = await axios.get(
       `${import.meta.env.VITE_BACKEND_URL}/api/products/?${query.toString()}`
     ); // Make the API request
-    // console.log(response.data); 
-    console.log(response.data);
+    // console.log(response.data);
     return response.data;
     } catch (error) {
       console.log(error);
       return rejectWithValue(error.response.data.message);
     }
-   
+
   }
 );
 
@@ -166,7 +165,6 @@ const productSlice = createSlice({
       })
       .addCase(fetchProductsByFilters.fulfilled, (state, action) => {
         state.loading = false;
-        console.log(action.payload);
         state.products = Array.isArray(action.payload.products) ? action.payload.products : [];
         state.total = action.payload.total;
         state.pages = action.payload.pages;

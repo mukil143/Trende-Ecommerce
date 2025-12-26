@@ -63,7 +63,6 @@ const OrdersInfopage = () => {
   const handleSearch = (e) =>{
       const query = e.target.value.toLowerCase();
       setQuery(query);
-      console.log("search query:",query);
 
     }
 

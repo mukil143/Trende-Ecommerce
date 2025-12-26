@@ -38,7 +38,6 @@ export const createUser = createAsyncThunk(
           },
         }
       );
-      console.log(response.data);
       return response.data;
     } catch (error) {
       console.log(error);
@@ -62,7 +61,6 @@ export const updateUser = createAsyncThunk(
           },
         }
       );
-      console.log(response.data);
       return response.data;
     } catch (error) {}
   }
@@ -82,7 +80,6 @@ export const deleteUser = createAsyncThunk(
           },
         }
       );
-      console.log(response.data);
       return response.data.id;
     } catch (error) {
       console.log(error);

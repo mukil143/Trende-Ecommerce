@@ -17,10 +17,8 @@ const Register = () => {
   const [password, setPassWord] = useState("");
 
   const navigate = useNavigate();
-  console.log({ email, password });
   const [isHide, setishide] = useState(true);
   const redirect =  new URLSearchParams(window.location.search).get("redirect") || "/";
-  console.log("redirect",redirect);
   const isCheckoutRedirect = redirect.includes("/checkout");
 
   const handleSubmit = (e) => {
@@ -47,7 +45,6 @@ const Register = () => {
       });
 
 
-    // console.log("User Register",{name,email,password})
   };
 
 

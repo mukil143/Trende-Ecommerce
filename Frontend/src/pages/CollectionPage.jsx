@@ -14,7 +14,6 @@ const CollectionPage = () => {
   const dispatch = useDispatch();
   const {collection} = useParams();
   const [searchParams] = useSearchParams();
-  // console.log(searchParams.get("search"));
 
   // const [products, setProducts] = useState([]);
   const {products,loading,error,pages,page,total} = useSelector((state) => state.products);
@@ -24,7 +23,6 @@ const CollectionPage = () => {
 
   const sidebarRef=useRef(null)
   const buttonRef=useRef(null)
-  // console.log(sidebarRef)
 
   const [isSidebarOpen,setisSidebarOpen]=useState(false);
 
