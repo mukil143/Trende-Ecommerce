@@ -1,0 +1,425 @@
+{
+  "name": "Frontend",
+  "path": "c:\\Users\\mukil\\OneDrive\\Desktop\\Trendé\\Frontend",
+  "type": "directory",
+  "children": [
+    {
+      "name": "public",
+      "type": "folder",
+      "icon": "📁",
+      "children": [
+        {
+          "name": "vite.svg",
+          "type": "file",
+          "icon": "🖼️"
+        }
+      ]
+    },
+    {
+      "name": "src",
+      "type": "folder",
+      "icon": "📁",
+      "children": [
+        {
+          "name": "assets",
+          "type": "folder",
+          "icon": "📁",
+          "children": [
+            {
+              "name": "razorpay-icon.svg",
+              "type": "file",
+              "icon": "🖼️"
+            },
+            {
+              "name": "react.svg",
+              "type": "file",
+              "icon": "🖼️"
+            }
+          ]
+        },
+        {
+          "name": "components",
+          "type": "folder",
+          "icon": "📁",
+          "children": [
+            {
+              "name": "Admin",
+              "type": "folder",
+              "icon": "📁",
+              "children": [
+                {
+                  "name": "AdminHomePage.jsx",
+                  "type": "file",
+                  "icon": "⚛️"
+                },
+                {
+                  "name": "AdminLayout.jsx",
+                  "type": "file",
+                  "icon": "⚛️"
+                },
+                {
+                  "name": "AdminSidebar.jsx",
+                  "type": "file",
+                  "icon": "⚛️"
+                },
+                {
+                  "name": "EditProductPage.jsx",
+                  "type": "file",
+                  "icon": "⚛️"
+                },
+                {
+                  "name": "OrdersInfopage.jsx",
+                  "type": "file",
+                  "icon": "⚛️"
+                },
+                {
+                  "name": "ProductManagement.jsx",
+                  "type": "file",
+                  "icon": "⚛️"
+                },
+                {
+                  "name": "UserManagement.jsx",
+                  "type": "file",
+                  "icon": "⚛️"
+                }
+              ]
+            },
+            {
+              "name": "Cart",
+              "type": "folder",
+              "icon": "📁",
+              "children": [
+                {
+                  "name": "CartContents.jsx",
+                  "type": "file",
+                  "icon": "⚛️"
+                },
+                {
+                  "name": "Checkout.jsx",
+                  "type": "file",
+                  "icon": "⚛️"
+                },
+                {
+                  "name": "Razorpaybutton.jsx",
+                  "type": "file",
+                  "icon": "⚛️"
+                }
+              ]
+            },
+            {
+              "name": "Common",
+              "type": "folder",
+              "icon": "📁",
+              "children": [
+                {
+                  "name": "Footer.jsx",
+                  "type": "file",
+                  "icon": "⚛️"
+                },
+                {
+                  "name": "Header.jsx",
+                  "type": "file",
+                  "icon": "⚛️"
+                },
+                {
+                  "name": "Loading.jsx",
+                  "type": "file",
+                  "icon": "⚛️"
+                },
+                {
+                  "name": "Navbar.jsx",
+                  "type": "file",
+                  "icon": "⚛️"
+                },
+                {
+                  "name": "OrderLoader.jsx",
+                  "type": "file",
+                  "icon": "⚛️"
+                },
+                {
+                  "name": "ScrollToTop.jsx",
+                  "type": "file",
+                  "icon": "⚛️"
+                },
+                {
+                  "name": "SearchBar.jsx",
+                  "type": "file",
+                  "icon": "⚛️"
+                }
+              ]
+            },
+            {
+              "name": "Layout",
+              "type": "folder",
+              "icon": "📁",
+              "children": [
+                {
+                  "name": "CartDrawer.jsx",
+                  "type": "file",
+                  "icon": "⚛️"
+                },
+                {
+                  "name": "Hero.jsx",
+                  "type": "file",
+                  "icon": "⚛️"
+                },
+                {
+                  "name": "NavDrawer.jsx",
+                  "type": "file",
+                  "icon": "⚛️"
+                },
+                {
+                  "name": "Topbar.jsx",
+                  "type": "file",
+                  "icon": "⚛️"
+                },
+                {
+                  "name": "UserLayout.jsx",
+                  "type": "file",
+                  "icon": "⚛️"
+                }
+              ]
+            },
+            {
+              "name": "Products",
+              "type": "folder",
+              "icon": "📁",
+              "children": [
+                {
+                  "name": "FeaturedCollection.jsx",
+                  "type": "file",
+                  "icon": "⚛️"
+                },
+                {
+                  "name": "FeaturedSection.jsx",
+                  "type": "file",
+                  "icon": "⚛️"
+                },
+                {
+                  "name": "FilterSidebar.jsx",
+                  "type": "file",
+                  "icon": "⚛️"
+                },
+                {
+                  "name": "GenderCollectionSection.jsx",
+                  "type": "file",
+                  "icon": "⚛️"
+                },
+                {
+                  "name": "NewArrival.jsx",
+                  "type": "file",
+                  "icon": "⚛️"
+                },
+                {
+                  "name": "ProductDetails.jsx",
+                  "type": "file",
+                  "icon": "⚛️"
+                },
+                {
+                  "name": "ProductGrid.jsx",
+                  "type": "file",
+                  "icon": "⚛️"
+                },
+                {
+                  "name": "SortOptions.jsx",
+                  "type": "file",
+                  "icon": "⚛️"
+                }
+              ]
+            },
+            {
+              "name": "routes",
+              "type": "folder",
+              "icon": "📁",
+              "children": [
+                {
+                  "name": "ProtectedRoute.jsx",
+                  "type": "file",
+                  "icon": "⚛️"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "pages",
+          "type": "folder",
+          "icon": "📁",
+          "children": [
+            {
+              "name": "Admin Home.jsx",
+              "type": "file",
+              "icon": "⚛️"
+            },
+            {
+              "name": "CollectionPage.jsx",
+              "type": "file",
+              "icon": "⚛️"
+            },
+            {
+              "name": "Home.jsx",
+              "type": "file",
+              "icon": "⚛️"
+            },
+            {
+              "name": "Login.jsx",
+              "type": "file",
+              "icon": "⚛️"
+            },
+            {
+              "name": "MyOrdersPage.jsx",
+              "type": "file",
+              "icon": "⚛️"
+            },
+            {
+              "name": "OrderConfirmationPage.jsx",
+              "type": "file",
+              "icon": "⚛️"
+            },
+            {
+              "name": "OrderDetailsPage.jsx",
+              "type": "file",
+              "icon": "⚛️"
+            },
+            {
+              "name": "Profile.jsx",
+              "type": "file",
+              "icon": "⚛️"
+            },
+            {
+              "name": "Register.jsx",
+              "type": "file",
+              "icon": "⚛️"
+            }
+          ]
+        },
+        {
+          "name": "redux",
+          "type": "folder",
+          "icon": "📁",
+          "children": [
+            {
+              "name": "store.js",
+              "type": "file",
+              "icon": "📜"
+            }
+          ]
+        },
+        {
+          "name": "slices",
+          "type": "folder",
+          "icon": "📁",
+          "children": [
+            {
+              "name": "AdminOrderSlice.js",
+              "type": "file",
+              "icon": "📜"
+            },
+            {
+              "name": "AdminProductSlice.js",
+              "type": "file",
+              "icon": "📜"
+            },
+            {
+              "name": "AdminSlice.js",
+              "type": "file",
+              "icon": "📜"
+            },
+            {
+              "name": "AuthSlice.js",
+              "type": "file",
+              "icon": "📜"
+            },
+            {
+              "name": "CartSlice.js",
+              "type": "file",
+              "icon": "📜"
+            },
+            {
+              "name": "CheckoutSlice.js",
+              "type": "file",
+              "icon": "📜"
+            },
+            {
+              "name": "OrderSlice.js",
+              "type": "file",
+              "icon": "📜"
+            },
+            {
+              "name": "productSlice.js",
+              "type": "file",
+              "icon": "📜"
+            }
+          ]
+        },
+        {
+          "name": "App.css",
+          "type": "file",
+          "icon": "🎨"
+        },
+        {
+          "name": "App.jsx",
+          "type": "file",
+          "icon": "⚛️"
+        },
+        {
+          "name": "index.css",
+          "type": "file",
+          "icon": "🎨"
+        },
+        {
+          "name": "main.jsx",
+          "type": "file",
+          "icon": "⚛️"
+        }
+      ]
+    },
+    {
+      "name": ".gitignore",
+      "type": "file",
+      "icon": "📁"
+    },
+    {
+      "name": "README.md",
+      "type": "file",
+      "icon": "📝"
+    },
+    {
+      "name": "eslint.config.js",
+      "type": "file",
+      "icon": "📜"
+    },
+    {
+      "name": "index.html",
+      "type": "file",
+      "icon": "🌐"
+    },
+    {
+      "name": "package-lock.json",
+      "type": "file",
+      "icon": "⚙️"
+    },
+    {
+      "name": "package.json",
+      "type": "file",
+      "icon": "📦"
+    },
+    {
+      "name": "tailwind.config.js",
+      "type": "file",
+      "icon": "📜"
+    },
+    {
+      "name": "vite.config.js",
+      "type": "file",
+      "icon": "📜"
+    }
+  ],
+  "metadata": {
+    "generated": "2025-11-19T14:56:48.219Z",
+    "generator": "FileTree Pro Extension",
+    "version": "0.2.0",
+    "showIcons": true,
+    "maxDepth": 10
+  }
+}

@@ -1,0 +1,325 @@
+<svg width="1000" height="2050" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <style>
+      .title { font-family: 'Arial', sans-serif; font-size: 18px; font-weight: bold; fill: #2c3e50; }
+      .subtitle { font-family: 'Arial', sans-serif; font-size: 12px; fill: #7f8c8d; }
+      .folder-text { font-family: 'Consolas', 'Courier New', monospace; font-size: 14px; fill: #27ae60; font-weight: bold; }
+      .file-text { font-family: 'Consolas', 'Courier New', monospace; font-size: 14px; fill: #3498db; }
+      .icon { font-family: 'Arial', sans-serif; font-size: 16px; }
+      .line { stroke: #bdc3c7; stroke-width: 1.5; }
+      .background { fill: #f8f9fa; }
+      .header-bg { fill: #ecf0f1; }
+    </style>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1000" height="2050" class="background"/>
+
+  <!-- Header -->
+  <rect x="0" y="0" width="1000" height="60" class="header-bg"/>
+  <text x="20" y="25" class="title">📁 File Tree: Frontend</text>
+  <text x="20" y="45" class="subtitle">Generated: 11/19/2025, 8:30:25 PM | FileTree Pro Extension</text>
+
+  <!-- Tree Structure -->
+    <line x1="15" y1="80" x2="25" y2="80" class="line"/>
+    <text x="30" y="85" class="icon">📁</text>
+    <text x="55" y="85" class="folder-text">public/</text>
+    <line x1="45" y1="100" x2="45" y2="110" class="line"/>
+    <line x1="45" y1="110" x2="55" y2="110" class="line"/>
+    <text x="60" y="115" class="icon">🖼️</text>
+    <text x="85" y="115" class="file-text">vite.svg</text>
+    <line x1="15" y1="180" x2="25" y2="180" class="line"/>
+    <text x="30" y="185" class="icon">📁</text>
+    <text x="55" y="185" class="folder-text">src/</text>
+    <line x1="45" y1="200" x2="45" y2="210" class="line"/>
+    <line x1="45" y1="210" x2="55" y2="210" class="line"/>
+    <text x="60" y="215" class="icon">📁</text>
+    <text x="85" y="215" class="folder-text">assets/</text>
+    <line x1="75" y1="230" x2="75" y2="240" class="line"/>
+    <line x1="75" y1="240" x2="85" y2="240" class="line"/>
+    <text x="90" y="245" class="icon">🖼️</text>
+    <text x="115" y="245" class="file-text">razorpay-icon.svg</text>
+    <line x1="75" y1="265" x2="75" y2="275" class="line"/>
+    <line x1="75" y1="275" x2="85" y2="275" class="line"/>
+    <text x="90" y="280" class="icon">🖼️</text>
+    <text x="115" y="280" class="file-text">react.svg</text>
+    <line x1="45" y1="335" x2="45" y2="345" class="line"/>
+    <line x1="45" y1="345" x2="55" y2="345" class="line"/>
+    <text x="60" y="350" class="icon">📁</text>
+    <text x="85" y="350" class="folder-text">components/</text>
+    <line x1="75" y1="365" x2="75" y2="375" class="line"/>
+    <line x1="75" y1="375" x2="85" y2="375" class="line"/>
+    <text x="90" y="380" class="icon">📁</text>
+    <text x="115" y="380" class="folder-text">Admin/</text>
+    <line x1="105" y1="395" x2="105" y2="405" class="line"/>
+    <line x1="105" y1="405" x2="115" y2="405" class="line"/>
+    <text x="120" y="410" class="icon">📄</text>
+    <text x="145" y="410" class="file-text">AdminHomePage.jsx</text>
+    <line x1="105" y1="430" x2="105" y2="440" class="line"/>
+    <line x1="105" y1="440" x2="115" y2="440" class="line"/>
+    <text x="120" y="445" class="icon">📄</text>
+    <text x="145" y="445" class="file-text">AdminLayout.jsx</text>
+    <line x1="105" y1="465" x2="105" y2="475" class="line"/>
+    <line x1="105" y1="475" x2="115" y2="475" class="line"/>
+    <text x="120" y="480" class="icon">📄</text>
+    <text x="145" y="480" class="file-text">AdminSidebar.jsx</text>
+    <line x1="105" y1="500" x2="105" y2="510" class="line"/>
+    <line x1="105" y1="510" x2="115" y2="510" class="line"/>
+    <text x="120" y="515" class="icon">📄</text>
+    <text x="145" y="515" class="file-text">EditProductPage.jsx</text>
+    <line x1="105" y1="535" x2="105" y2="545" class="line"/>
+    <line x1="105" y1="545" x2="115" y2="545" class="line"/>
+    <text x="120" y="550" class="icon">📄</text>
+    <text x="145" y="550" class="file-text">OrdersInfopage.jsx</text>
+    <line x1="105" y1="570" x2="105" y2="580" class="line"/>
+    <line x1="105" y1="580" x2="115" y2="580" class="line"/>
+    <text x="120" y="585" class="icon">📄</text>
+    <text x="145" y="585" class="file-text">ProductManagement.jsx</text>
+    <line x1="105" y1="605" x2="105" y2="615" class="line"/>
+    <line x1="105" y1="615" x2="115" y2="615" class="line"/>
+    <text x="120" y="620" class="icon">📄</text>
+    <text x="145" y="620" class="file-text">UserManagement.jsx</text>
+    <line x1="75" y1="675" x2="75" y2="685" class="line"/>
+    <line x1="75" y1="685" x2="85" y2="685" class="line"/>
+    <text x="90" y="690" class="icon">📁</text>
+    <text x="115" y="690" class="folder-text">Cart/</text>
+    <line x1="105" y1="705" x2="105" y2="715" class="line"/>
+    <line x1="105" y1="715" x2="115" y2="715" class="line"/>
+    <text x="120" y="720" class="icon">📄</text>
+    <text x="145" y="720" class="file-text">CartContents.jsx</text>
+    <line x1="105" y1="740" x2="105" y2="750" class="line"/>
+    <line x1="105" y1="750" x2="115" y2="750" class="line"/>
+    <text x="120" y="755" class="icon">📄</text>
+    <text x="145" y="755" class="file-text">Checkout.jsx</text>
+    <line x1="105" y1="775" x2="105" y2="785" class="line"/>
+    <line x1="105" y1="785" x2="115" y2="785" class="line"/>
+    <text x="120" y="790" class="icon">📄</text>
+    <text x="145" y="790" class="file-text">Razorpaybutton.jsx</text>
+    <line x1="75" y1="845" x2="75" y2="855" class="line"/>
+    <line x1="75" y1="855" x2="85" y2="855" class="line"/>
+    <text x="90" y="860" class="icon">📁</text>
+    <text x="115" y="860" class="folder-text">Common/</text>
+    <line x1="105" y1="875" x2="105" y2="885" class="line"/>
+    <line x1="105" y1="885" x2="115" y2="885" class="line"/>
+    <text x="120" y="890" class="icon">📄</text>
+    <text x="145" y="890" class="file-text">Footer.jsx</text>
+    <line x1="105" y1="910" x2="105" y2="920" class="line"/>
+    <line x1="105" y1="920" x2="115" y2="920" class="line"/>
+    <text x="120" y="925" class="icon">📄</text>
+    <text x="145" y="925" class="file-text">Header.jsx</text>
+    <line x1="105" y1="945" x2="105" y2="955" class="line"/>
+    <line x1="105" y1="955" x2="115" y2="955" class="line"/>
+    <text x="120" y="960" class="icon">📄</text>
+    <text x="145" y="960" class="file-text">Loading.jsx</text>
+    <line x1="105" y1="980" x2="105" y2="990" class="line"/>
+    <line x1="105" y1="990" x2="115" y2="990" class="line"/>
+    <text x="120" y="995" class="icon">📄</text>
+    <text x="145" y="995" class="file-text">Navbar.jsx</text>
+    <line x1="105" y1="1015" x2="105" y2="1025" class="line"/>
+    <line x1="105" y1="1025" x2="115" y2="1025" class="line"/>
+    <text x="120" y="1030" class="icon">📄</text>
+    <text x="145" y="1030" class="file-text">OrderLoader.jsx</text>
+    <line x1="105" y1="1050" x2="105" y2="1060" class="line"/>
+    <line x1="105" y1="1060" x2="115" y2="1060" class="line"/>
+    <text x="120" y="1065" class="icon">📄</text>
+    <text x="145" y="1065" class="file-text">ScrollToTop.jsx</text>
+    <line x1="105" y1="1085" x2="105" y2="1095" class="line"/>
+    <line x1="105" y1="1095" x2="115" y2="1095" class="line"/>
+    <text x="120" y="1100" class="icon">📄</text>
+    <text x="145" y="1100" class="file-text">SearchBar.jsx</text>
+    <line x1="75" y1="1155" x2="75" y2="1165" class="line"/>
+    <line x1="75" y1="1165" x2="85" y2="1165" class="line"/>
+    <text x="90" y="1170" class="icon">📁</text>
+    <text x="115" y="1170" class="folder-text">Layout/</text>
+    <line x1="105" y1="1185" x2="105" y2="1195" class="line"/>
+    <line x1="105" y1="1195" x2="115" y2="1195" class="line"/>
+    <text x="120" y="1200" class="icon">📄</text>
+    <text x="145" y="1200" class="file-text">CartDrawer.jsx</text>
+    <line x1="105" y1="1220" x2="105" y2="1230" class="line"/>
+    <line x1="105" y1="1230" x2="115" y2="1230" class="line"/>
+    <text x="120" y="1235" class="icon">📄</text>
+    <text x="145" y="1235" class="file-text">Hero.jsx</text>
+    <line x1="105" y1="1255" x2="105" y2="1265" class="line"/>
+    <line x1="105" y1="1265" x2="115" y2="1265" class="line"/>
+    <text x="120" y="1270" class="icon">📄</text>
+    <text x="145" y="1270" class="file-text">NavDrawer.jsx</text>
+    <line x1="105" y1="1290" x2="105" y2="1300" class="line"/>
+    <line x1="105" y1="1300" x2="115" y2="1300" class="line"/>
+    <text x="120" y="1305" class="icon">📄</text>
+    <text x="145" y="1305" class="file-text">Topbar.jsx</text>
+    <line x1="105" y1="1325" x2="105" y2="1335" class="line"/>
+    <line x1="105" y1="1335" x2="115" y2="1335" class="line"/>
+    <text x="120" y="1340" class="icon">📄</text>
+    <text x="145" y="1340" class="file-text">UserLayout.jsx</text>
+    <line x1="75" y1="1395" x2="75" y2="1405" class="line"/>
+    <line x1="75" y1="1405" x2="85" y2="1405" class="line"/>
+    <text x="90" y="1410" class="icon">📁</text>
+    <text x="115" y="1410" class="folder-text">Products/</text>
+    <line x1="105" y1="1425" x2="105" y2="1435" class="line"/>
+    <line x1="105" y1="1435" x2="115" y2="1435" class="line"/>
+    <text x="120" y="1440" class="icon">📄</text>
+    <text x="145" y="1440" class="file-text">FeaturedCollection.jsx</text>
+    <line x1="105" y1="1460" x2="105" y2="1470" class="line"/>
+    <line x1="105" y1="1470" x2="115" y2="1470" class="line"/>
+    <text x="120" y="1475" class="icon">📄</text>
+    <text x="145" y="1475" class="file-text">FeaturedSection.jsx</text>
+    <line x1="105" y1="1495" x2="105" y2="1505" class="line"/>
+    <line x1="105" y1="1505" x2="115" y2="1505" class="line"/>
+    <text x="120" y="1510" class="icon">📄</text>
+    <text x="145" y="1510" class="file-text">FilterSidebar.jsx</text>
+    <line x1="105" y1="1530" x2="105" y2="1540" class="line"/>
+    <line x1="105" y1="1540" x2="115" y2="1540" class="line"/>
+    <text x="120" y="1545" class="icon">📄</text>
+    <text x="145" y="1545" class="file-text">GenderCollectionSection.jsx</text>
+    <line x1="105" y1="1565" x2="105" y2="1575" class="line"/>
+    <line x1="105" y1="1575" x2="115" y2="1575" class="line"/>
+    <text x="120" y="1580" class="icon">📄</text>
+    <text x="145" y="1580" class="file-text">NewArrival.jsx</text>
+    <line x1="105" y1="1600" x2="105" y2="1610" class="line"/>
+    <line x1="105" y1="1610" x2="115" y2="1610" class="line"/>
+    <text x="120" y="1615" class="icon">📄</text>
+    <text x="145" y="1615" class="file-text">ProductDetails.jsx</text>
+    <line x1="105" y1="1635" x2="105" y2="1645" class="line"/>
+    <line x1="105" y1="1645" x2="115" y2="1645" class="line"/>
+    <text x="120" y="1650" class="icon">📄</text>
+    <text x="145" y="1650" class="file-text">ProductGrid.jsx</text>
+    <line x1="105" y1="1670" x2="105" y2="1680" class="line"/>
+    <line x1="105" y1="1680" x2="115" y2="1680" class="line"/>
+    <text x="120" y="1685" class="icon">📄</text>
+    <text x="145" y="1685" class="file-text">SortOptions.jsx</text>
+    <line x1="75" y1="1740" x2="75" y2="1750" class="line"/>
+    <line x1="75" y1="1750" x2="85" y2="1750" class="line"/>
+    <text x="90" y="1755" class="icon">📁</text>
+    <text x="115" y="1755" class="folder-text">routes/</text>
+    <line x1="105" y1="1770" x2="105" y2="1780" class="line"/>
+    <line x1="105" y1="1780" x2="115" y2="1780" class="line"/>
+    <text x="120" y="1785" class="icon">📄</text>
+    <text x="145" y="1785" class="file-text">ProtectedRoute.jsx</text>
+    <line x1="45" y1="1875" x2="45" y2="1885" class="line"/>
+    <line x1="45" y1="1885" x2="55" y2="1885" class="line"/>
+    <text x="60" y="1890" class="icon">📁</text>
+    <text x="85" y="1890" class="folder-text">pages/</text>
+    <line x1="75" y1="1905" x2="75" y2="1915" class="line"/>
+    <line x1="75" y1="1915" x2="85" y2="1915" class="line"/>
+    <text x="90" y="1920" class="icon">📄</text>
+    <text x="115" y="1920" class="file-text">Admin Home.jsx</text>
+    <line x1="75" y1="1940" x2="75" y2="1950" class="line"/>
+    <line x1="75" y1="1950" x2="85" y2="1950" class="line"/>
+    <text x="90" y="1955" class="icon">📄</text>
+    <text x="115" y="1955" class="file-text">CollectionPage.jsx</text>
+    <line x1="75" y1="1975" x2="75" y2="1985" class="line"/>
+    <line x1="75" y1="1985" x2="85" y2="1985" class="line"/>
+    <text x="90" y="1990" class="icon">📄</text>
+    <text x="115" y="1990" class="file-text">Home.jsx</text>
+    <line x1="75" y1="2010" x2="75" y2="2020" class="line"/>
+    <line x1="75" y1="2020" x2="85" y2="2020" class="line"/>
+    <text x="90" y="2025" class="icon">📄</text>
+    <text x="115" y="2025" class="file-text">Login.jsx</text>
+    <line x1="75" y1="2045" x2="75" y2="2055" class="line"/>
+    <line x1="75" y1="2055" x2="85" y2="2055" class="line"/>
+    <text x="90" y="2060" class="icon">📄</text>
+    <text x="115" y="2060" class="file-text">MyOrdersPage.jsx</text>
+    <line x1="75" y1="2080" x2="75" y2="2090" class="line"/>
+    <line x1="75" y1="2090" x2="85" y2="2090" class="line"/>
+    <text x="90" y="2095" class="icon">📄</text>
+    <text x="115" y="2095" class="file-text">OrderConfirmationPage.jsx</text>
+    <line x1="75" y1="2115" x2="75" y2="2125" class="line"/>
+    <line x1="75" y1="2125" x2="85" y2="2125" class="line"/>
+    <text x="90" y="2130" class="icon">📄</text>
+    <text x="115" y="2130" class="file-text">OrderDetailsPage.jsx</text>
+    <line x1="75" y1="2150" x2="75" y2="2160" class="line"/>
+    <line x1="75" y1="2160" x2="85" y2="2160" class="line"/>
+    <text x="90" y="2165" class="icon">📄</text>
+    <text x="115" y="2165" class="file-text">Profile.jsx</text>
+    <line x1="75" y1="2185" x2="75" y2="2195" class="line"/>
+    <line x1="75" y1="2195" x2="85" y2="2195" class="line"/>
+    <text x="90" y="2200" class="icon">📄</text>
+    <text x="115" y="2200" class="file-text">Register.jsx</text>
+    <line x1="45" y1="2255" x2="45" y2="2265" class="line"/>
+    <line x1="45" y1="2265" x2="55" y2="2265" class="line"/>
+    <text x="60" y="2270" class="icon">📁</text>
+    <text x="85" y="2270" class="folder-text">redux/</text>
+    <line x1="75" y1="2285" x2="75" y2="2295" class="line"/>
+    <line x1="75" y1="2295" x2="85" y2="2295" class="line"/>
+    <text x="90" y="2300" class="icon">📄</text>
+    <text x="115" y="2300" class="file-text">store.js</text>
+    <line x1="45" y1="2355" x2="45" y2="2365" class="line"/>
+    <line x1="45" y1="2365" x2="55" y2="2365" class="line"/>
+    <text x="60" y="2370" class="icon">📁</text>
+    <text x="85" y="2370" class="folder-text">slices/</text>
+    <line x1="75" y1="2385" x2="75" y2="2395" class="line"/>
+    <line x1="75" y1="2395" x2="85" y2="2395" class="line"/>
+    <text x="90" y="2400" class="icon">📄</text>
+    <text x="115" y="2400" class="file-text">AdminOrderSlice.js</text>
+    <line x1="75" y1="2420" x2="75" y2="2430" class="line"/>
+    <line x1="75" y1="2430" x2="85" y2="2430" class="line"/>
+    <text x="90" y="2435" class="icon">📄</text>
+    <text x="115" y="2435" class="file-text">AdminProductSlice.js</text>
+    <line x1="75" y1="2455" x2="75" y2="2465" class="line"/>
+    <line x1="75" y1="2465" x2="85" y2="2465" class="line"/>
+    <text x="90" y="2470" class="icon">📄</text>
+    <text x="115" y="2470" class="file-text">AdminSlice.js</text>
+    <line x1="75" y1="2490" x2="75" y2="2500" class="line"/>
+    <line x1="75" y1="2500" x2="85" y2="2500" class="line"/>
+    <text x="90" y="2505" class="icon">📄</text>
+    <text x="115" y="2505" class="file-text">AuthSlice.js</text>
+    <line x1="75" y1="2525" x2="75" y2="2535" class="line"/>
+    <line x1="75" y1="2535" x2="85" y2="2535" class="line"/>
+    <text x="90" y="2540" class="icon">📄</text>
+    <text x="115" y="2540" class="file-text">CartSlice.js</text>
+    <line x1="75" y1="2560" x2="75" y2="2570" class="line"/>
+    <line x1="75" y1="2570" x2="85" y2="2570" class="line"/>
+    <text x="90" y="2575" class="icon">📄</text>
+    <text x="115" y="2575" class="file-text">CheckoutSlice.js</text>
+    <line x1="75" y1="2595" x2="75" y2="2605" class="line"/>
+    <line x1="75" y1="2605" x2="85" y2="2605" class="line"/>
+    <text x="90" y="2610" class="icon">📄</text>
+    <text x="115" y="2610" class="file-text">OrderSlice.js</text>
+    <line x1="75" y1="2630" x2="75" y2="2640" class="line"/>
+    <line x1="75" y1="2640" x2="85" y2="2640" class="line"/>
+    <text x="90" y="2645" class="icon">📄</text>
+    <text x="115" y="2645" class="file-text">productSlice.js</text>
+    <line x1="45" y1="2700" x2="45" y2="2710" class="line"/>
+    <line x1="45" y1="2710" x2="55" y2="2710" class="line"/>
+    <text x="60" y="2715" class="icon">🎨</text>
+    <text x="85" y="2715" class="file-text">App.css</text>
+    <line x1="45" y1="2735" x2="45" y2="2745" class="line"/>
+    <line x1="45" y1="2745" x2="55" y2="2745" class="line"/>
+    <text x="60" y="2750" class="icon">📄</text>
+    <text x="85" y="2750" class="file-text">App.jsx</text>
+    <line x1="45" y1="2770" x2="45" y2="2780" class="line"/>
+    <line x1="45" y1="2780" x2="55" y2="2780" class="line"/>
+    <text x="60" y="2785" class="icon">🎨</text>
+    <text x="85" y="2785" class="file-text">index.css</text>
+    <line x1="45" y1="2805" x2="45" y2="2815" class="line"/>
+    <line x1="45" y1="2815" x2="55" y2="2815" class="line"/>
+    <text x="60" y="2820" class="icon">📄</text>
+    <text x="85" y="2820" class="file-text">main.jsx</text>
+    <line x1="15" y1="2885" x2="25" y2="2885" class="line"/>
+    <text x="30" y="2890" class="icon">⚙️</text>
+    <text x="55" y="2890" class="file-text">.gitignore</text>
+    <line x1="15" y1="2920" x2="25" y2="2920" class="line"/>
+    <text x="30" y="2925" class="icon">📝</text>
+    <text x="55" y="2925" class="file-text">README.md</text>
+    <line x1="15" y1="2955" x2="25" y2="2955" class="line"/>
+    <text x="30" y="2960" class="icon">⚙️</text>
+    <text x="55" y="2960" class="file-text">Structure.json</text>
+    <line x1="15" y1="2990" x2="25" y2="2990" class="line"/>
+    <text x="30" y="2995" class="icon">📄</text>
+    <text x="55" y="2995" class="file-text">eslint.config.js</text>
+    <line x1="15" y1="3025" x2="25" y2="3025" class="line"/>
+    <text x="30" y="3030" class="icon">🌐</text>
+    <text x="55" y="3030" class="file-text">index.html</text>
+    <line x1="15" y1="3060" x2="25" y2="3060" class="line"/>
+    <text x="30" y="3065" class="icon">⚙️</text>
+    <text x="55" y="3065" class="file-text">package-lock.json</text>
+    <line x1="15" y1="3095" x2="25" y2="3095" class="line"/>
+    <text x="30" y="3100" class="icon">⚙️</text>
+    <text x="55" y="3100" class="file-text">package.json</text>
+    <line x1="15" y1="3130" x2="25" y2="3130" class="line"/>
+    <text x="30" y="3135" class="icon">📄</text>
+    <text x="55" y="3135" class="file-text">tailwind.config.js</text>
+    <line x1="15" y1="3165" x2="25" y2="3165" class="line"/>
+    <text x="30" y="3170" class="icon">📄</text>
+    <text x="55" y="3170" class="file-text">vite.config.js</text>
+</svg>
