@@ -9,6 +9,7 @@ import adminProductReducer from '../slices/AdminProductSlice.js'
 import adminOrderReducer from '../slices/AdminOrderSlice.js'
 
  const store = configureStore({
+    devTools:false,
     reducer:{
         auth:authReducer,
         products:productReducer,
