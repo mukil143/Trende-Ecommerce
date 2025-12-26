@@ -19,7 +19,6 @@ import AdminOrderRoutes from "./Routes/AdminOrderRoutes.js"
 dotenv.config();
 dotenv.config({ quiet: true });
 
-console.log(process.env.PORT)
 
 const PORT = process.env.PORT || 3000;
 const app = express();
@@ -77,14 +76,13 @@ app.use("/api/admin/orders",AdminOrderRoutes)
 app.post("/api/payment/verify",(req, res) => {
   try{
 
-        console.log("Received payment verification request:", req.body);
+
         const { razorpay_payment_id, razorpay_order_id, razorpay_signature } = req.body;
         const generatedSignature =  crypto.createHmac('sha256', process.env.RAZORPAY_KEY_SECRET)
           .update(`${razorpay_order_id}|${razorpay_payment_id}`)
           .digest('hex');
 
         if (generatedSignature === razorpay_signature) {
-          console.log("Payment verification successful:", req.body);
           res.status(200).json({ message: "Payment verified successfully",
             status: 200,razorpay_payment_id, razorpay_order_id, razorpay_signature
            });
@@ -104,7 +102,7 @@ app.post("/api/payment/verify",(req, res) => {
 });
 
 app.post("/api/payment/orders",async(req, res) => {
-    console.log("Received order creation request:");
+
     try{
         const { amount, currency } = req.body;
         const razorpayInstance = new razorpay({
@@ -126,11 +124,9 @@ app.post("/api/payment/orders",async(req, res) => {
             return res.status(500).json({ error: "Internal Server Error" });
           }
           else{
-            console.log("Order created successfully:", order);
             res.status(200).send({ order });
           }
         })
-        console.log('Received order creation request:', req.body);
         if (!amount || !currency || !receipt) {
             return res.status(400).send({ error: "Missing required fields" });
         }
