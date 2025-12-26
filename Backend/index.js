@@ -1,5 +1,5 @@
 import express from "express";
-import razorpay from "razorpay";    
+import razorpay from "razorpay";
 import cors from "cors";
 import dotenv from "dotenv";
 import crypto from "crypto";
@@ -21,16 +21,20 @@ dotenv.config({ quiet: true });
 
 console.log(process.env.PORT)
 
-const PORT = process.env.PORT || 3000; 
+const PORT = process.env.PORT || 3000;
 const app = express();
 app.use(cors());
 app.use(express.json());
+app.use(async (req, res, next) => {
+  await connectDB();
+  next(); // Continue to the actual route
+});
 
 
 
 
 
-//All api routes  
+//All api routes
 app.use("/api/users",UserRoutes);
 
 //All api routes products
@@ -48,7 +52,7 @@ app.use("/api/orders",OrderRoutes)
 //All api routes upload
 app.use("/api/upload",UploadRoutes)
 
-//All api routes for subscribe 
+//All api routes for subscribe
 app.use("/api",SubscriberRoutes)
 
 
@@ -78,7 +82,7 @@ app.post("/api/payment/verify",(req, res) => {
         const generatedSignature =  crypto.createHmac('sha256', process.env.RAZORPAY_KEY_SECRET)
           .update(`${razorpay_order_id}|${razorpay_payment_id}`)
           .digest('hex');
-      
+
         if (generatedSignature === razorpay_signature) {
           console.log("Payment verification successful:", req.body);
           res.status(200).json({ message: "Payment verified successfully",
@@ -133,7 +137,7 @@ app.post("/api/payment/orders",async(req, res) => {
 
 
   // Simulating a successful order creation response
-  
+
     } catch (error) {
         console.error("Error creating order:", error);
         res.status(500).json({ error: "Internal Server Error" });
@@ -141,7 +145,7 @@ app.post("/api/payment/orders",async(req, res) => {
 
   // Here you would typically create an order in your payment gateway
   // For example, using Razorpay's API to create an order
-  
+
 });
 app.get("/", (req, res) => {
   res.status(200).send("Welcome to the Trende Backend API");
