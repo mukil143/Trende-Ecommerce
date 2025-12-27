@@ -71,13 +71,16 @@ function App() {
           <Route path="my-orders" element={<MyOrdersPage />} />
         </Route>
         {/* Admin Routes */}
-        <Route path="/admin" element={<AdminLayout />}>
+        <Route path="/admin" element={
+            <AdminProtectedRoute>
+          <AdminLayout />
+            </AdminProtectedRoute>
+          }>
           <Route
             index
             element={
-              <AdminProtectedRoute>
                 <AdminHomePage />
-              </AdminProtectedRoute>
+
             }
           />
           <Route path="users" element={<UserManagement />} />
