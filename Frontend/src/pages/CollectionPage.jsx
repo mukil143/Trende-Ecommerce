@@ -67,10 +67,10 @@ const CollectionPage = () => {
         <span className="text-lg">Filter</span>
     </button>
     {/* Filter Sidebar */}
-    <div  ref={sidebarRef} className={`${isSidebarOpen?"translate-x-0":"-translate-x-full"} z-50 lg:z-0   fixed inset-y-0 bg-white min-w-63  left-0  transition-transform duration-300 lg:translate-x-0 lg:static   `}>
+    <div  ref={sidebarRef} className={`${isSidebarOpen?"translate-x-0":"-translate-x-full"} z-50 lg:z-0   fixed inset-y-0 bg-white max-w-64  left-0  transition-transform duration-300 lg:translate-x-0 lg:static   `}>
         <FilterSidebar  />
     </div>
-    <div className="grow p-4 overflow-y-auto ">
+    <div className="grow p-4 h-screen scrollbar-hide  overflow-y-auto ">
         <h2 className="text-xl  uppercase mb-4">All Collection</h2>
         <p>{total} Products</p>
         {/* sort */}
