@@ -6,4 +6,17 @@ export default defineConfig({
   plugins: [react(),
     tailwindcss(),
   ],
+  build: {
+    rollupOptions: {
+      output: {
+        manualChunks(id) {
+          if (id.includes('node_modules')) {
+            return 'vendor';
+          }
+        },
+      },
+    },
+    // Optional: Increase the warning limit to 1000kb (1mb)
+    chunkSizeWarningLimit: 1000,
+  },
 })
